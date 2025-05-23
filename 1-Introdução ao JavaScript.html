@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao JavaScript</title>
+</head>
+<body>
+    <h1>Introdução ao JavaScript</h1>
+    <h2>JavaScript pode alterar o conteúdo HTML</h2>
+    <p id="vb">JavaScript pode alterar o conteúdo HTML5</p>
+    <button type="button" onclick="document.getElementById('vb').innerHTML= 'Olá mundo!'">Cique aqui!</button>
+
+    <h2>JavaScript pode alterar valores de atributos HTML</h2>
+    <p>Neste exemplo, o JavaScript altera o valor do <mark>src </mark>atributo (source) de uma &lt;img&gt; tag:</p>
+    <button onclick="document.getElementById('im1').src='img/ace.gif'">Acender a luz</button>
+    <img id="im1" src="img/apa.gif" style="width: 100px;">
+    <button onclick="document.getElementById('im1').src='img/apa.gif'">Apagar  a luz</button>
+
+    <h2>O que o JavaScript pode fazer?</h2>
+    <p id="bv">JavaScript pode alterar o estilo de um elemento HTML.</p>
+    <button type="button" onclick="document.getElementById('bv').style.fontSize='2em'">Cique aqui!</button>
+
+    <h2>Ocultar Informações em JavaScript</h2>
+    <p id="hj">JavaScript pode ocultar elementos HTML.</p>
+    <button type="button" onclick="document.getElementById('hj').style.display='none'">Clique aqui!</button>
+
+    <p>JavaScript pode mostrar elementos HTML ocultos.</p>
+    <p id="gh" style="display: none;">Hello JavaScript!</p>
+    <button type="button" onclick="document.getElementById('gh').style.display='block'">Clique aqui!</button>
+
+</body>
+</html>
